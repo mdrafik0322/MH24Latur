@@ -2,250 +2,180 @@
 <html lang="en">
 
 <head>
-    <title>MH 24</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH 24 - Premium Coffee Experience</title>
     <link rel="icon" href="MH24.png">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body {
-        margin: 0px;
-    }
-    
-    header {
-        border: 1px solid red;
-        display: flex;
-        justify-content: space-between;
-        background-color: rgba(0, 255, 255, 0.288);
-    }
-    
-    a {
-        text-decoration: none;
-        color: rgba(63, 7, 80, 0.877);
-    }
-    
-    #rafik {
-        width: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    
-    #first {
-        width: 100%;
-        height: 600px;
-        background-image: url('coffee.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    #second {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-    
-    #third {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    #fourth {
-        width: 100%;
-        height: 750px;
-        background-image: url('texture.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    #fifth {
-        width: 100%;
-        height: 500px;
-        background-image: url('cafe1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 120px;
-    }
-    
-    #sixth {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #eight {
-        width: 100%;
-        height: 200px;
-        background-image: url('texture.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #resume {
-        height: 45px;
-        width: 280px;
-        font-size: 22px;
-        background-color: rgba(0, 0, 0, 0.815);
-        color: white;
-        border: none;
-        border-radius: 12px;
-        cursor: pointer;
-    }
-    
-    footer {
-        height: 200px;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-</style>
 
 <body>
-    <header>
-        <div style="width: 40%;">
-
-            <img src="MH24.png" width="150px">
-
-        </div>
-
-        <div id="rafik">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">SHOP</a>
-            <a href="#">BLOG</a>
-            <a href="#">CONTACT</a>
-            <img src="cart.png" width="35px">
-            <img src="search.png" width="35px">
-            <img src="menu.png" width="35px">
-        </div>
-    </header>
-    <div id="first">
-        <div></div>
-        <div style="display: flex;align-items: center; justify-content: center; flex-direction: column;">
-            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-slider-img-1.png">
-            <h1 style="font-size: 60px; color: white; letter-spacing: 5px;">MH 24</h1>
-            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png">
-        </div>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <img src="MH24.png" alt="MH24 Logo">
     </div>
-    <div id="second">
-        <br><br><br><br>
-        <h1 style="font-size: 40px; color: black; letter-spacing: 5px;">Our Delicious Offer</h1>
-        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png">
-        <p style="font-size: 24px;">We offer coffee for all types of your mood!</p>
-
-    </div><br><br>
-    <div id="third">
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <img src="cup3.png" width="115px">
-            <h1>Types of Coffee</h1>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <img src="VR.png" width="85px">
-            <h1>Varities</h1>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <img src="pestu.png" width="160px">
-            <h1>Coffee & Pastry</h1>
-        </div>
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; ">
-            <img src="papercup.png" height="100px">
-            <h1>Coffee To Go</h1>
-        </div>
+    <div class="menu-toggle">☰</div>
+    <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="shop.html">SHOP</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
     </div>
-    <div id="fourth">
-        <br><br>
-        <h1 style="font-size: 50px;">The Coffee Herald</h1>
-        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png">
-        <p style="font-size: 20px;">Don't just swallow the coffee, absorb the feeling.</p>
-        <br><br><br>
-        <div style="display: flex; align-items: center; justify-content: space-around; column-gap: 10px;">
-            <div>
-                <img src="pre-tech.jpg" alt="" width="300px">
-                <h1>Pre Tech</h1>
-                <p style="width: 300px; text-align: justify; ">Method: Hot water slowly drips over coffee grounds in a filter. Grind Size: Medium-fine to coarse. Flavor Profile: Smooth, round body, highlighting nuanced flavors with clear acidity.</p>
+    <div class="overlay"></div>
+</header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-slider-img-1.png" alt="Coffee Image">
+            <h1>MH 24</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png" alt="Separator">
+        </div>
+    </section>
+
+    <!-- Our Offerings Section -->
+    <section class="section" id="offerings">
+        <div class="section-title">
+            <h1>Our Delicious Offer</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png" alt="Separator">
+            <p>We offer coffee for all types of your mood!</p>
+        </div>
+
+        <div class="offerings-container">
+            <div class="offering-card">
+                <img src="cup3.png" alt="Types of Coffee" width="115px">
+                <h2>Types of Coffee</h2>
             </div>
-            <div>
-                <img src="pre-tech1.jpg" alt="" width="300px">
-                <h1>it's coffee time!💕</h1>
-                <p style="width: 300px; text-align: justify; ">Rich and varied flavors: From the subtle and aromatic notes of Arabica to the bolder, more robust flavor of Robusta, coffee offers a diverse range of tastes to satisfy different palates.</p>
+            <div class="offering-card">
+                <img src="VR.png" alt="Varieties" width="85px">
+                <h2>Varieties</h2>
             </div>
-            <div>
-                <img src="pre-tech2.jpg" alt="" width="300px">
-                <h1>Coffee With Work</h1>
-                <p style="width: 300px; text-align: justify;">coffee isn't just a drink; it's an integral part of the workday ritual, and for good reasons. Research suggests that when consumed in moderation, it can be a valuable tool for boosting productivity. </p>
+            <div class="offering-card">
+                <img src="pestu.png" alt="Coffee & Pastry" width="160px">
+                <h2>Coffee & Pastry</h2>
+            </div>
+            <div class="offering-card">
+                <img src="papercup.png" alt="Coffee To Go" height="100px">
+                <h2>Coffee To Go</h2>
             </div>
         </div>
-    </div>
-    <div id="fifth">
-        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-single-img-1-250x226.png">
-    </div>
-    <div id="sixth">
-        <h1 style="letter-spacing: 5px; font-size: 50px;">Our Sweet Gallery</h1>
-        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png" alt="">
-        <p style="font-size: 22px;">This is often cited as one of the best. It's known for roasting its own beans.</p>
-    </div>
-    <br><br><br>
-    <div style="display: flex; align-items: center; justify-content: center; column-gap: 12px; row-gap: 12px; flex-wrap: wrap;">
-        <img src="G1.jpg" alt="" width="300">
-        <img src="G2.jpg" alt="" width="300">
-        <img src="G7.jpg" alt="" width="300">
-        <img src="G4.jpg" alt="" width="300">
-        <img src="G5.jpg" alt="" width="300">
-        <img src="G6.jpg" alt="" width="300">
-        <img src="G3.jpg" alt="" width="300">
-        <img src="G8.jpg" alt="" width="300">
-        <img src="G9.jpg" alt="" width="300">
-        <img src="G10.jpg" alt="" width="300" height="200px">
-        <img src="G11.jpg" alt="" width="300" height="200px">
-        <img src="G12.jpg" alt="" width="300">
+    </section>
 
-        <div style="display: flex; align-items: center; justify-content: space-evenly; height: 150px;">
-            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-5-hover.png" alt="" width="190">
-
-            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-6-hover.png" alt="" width="190">
-
-            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-1.png" alt="" width="190">
-
-            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-2-hover.png" alt="" width="190">
-
-            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-4-hover.png" alt="" width="190">
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="section-title">
+            <h1>The Coffee Herald</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png" alt="Separator">
+            <p>Don't just swallow the coffee, absorb the feeling.</p>
         </div>
-    </div><br>
-    <div id="eight">
-        <a href="Rafik_Resume.pdf" download="">
-            <button id="resume">Download My Resume</button>
-        </a>
-    </div>
+
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="pre-tech.jpg" alt="Pre Tech">
+                <h2>Pre Tech</h2>
+                <p>Method: Hot water slowly drips over coffee grounds in a filter. Grind Size: Medium-fine to coarse. Flavor Profile: Smooth, round body, highlighting nuanced flavors with clear acidity.</p>
+            </div>
+            <div class="blog-card">
+                <img src="pre-tech1.jpg" alt="Coffee Time">
+                <h2>It's Coffee Time!💕</h2>
+                <p>Rich and varied flavors: From the subtle and aromatic notes of Arabica to the bolder, more robust flavor of Robusta, coffee offers a diverse range of tastes to satisfy different palates.</p>
+            </div>
+            <div class="blog-card">
+                <img src="pre-tech2.jpg" alt="Coffee With Work">
+                <h2>Coffee With Work</h2>
+                <p>Coffee isn't just a drink; it's an integral part of the workday ritual, and for good reasons. Research suggests that when consumed in moderation, it can be a valuable tool for boosting productivity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <div class="section-title">
+            <h1>Our Sweet Gallery</h1>
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png" alt="Separator">
+            <p>This is often cited as one of the best. It's known for roasting its own beans.</p>
+        </div>
+
+        <div class="gallery-container">
+            <img src="G1.jpg" alt="Gallery Image 1">
+            <img src="G2.jpg" alt="Gallery Image 2">
+            <img src="G7.jpg" alt="Gallery Image 3">
+            <img src="G4.jpg" alt="Gallery Image 4">
+            <img src="G5.jpg" alt="Gallery Image 5">
+            <img src="G6.jpg" alt="Gallery Image 6">
+            <img src="G3.jpg" alt="Gallery Image 7">
+            <img src="G8.jpg" alt="Gallery Image 8">
+            <img src="G9.jpg" alt="Gallery Image 9">
+            <img src="G10.jpg" alt="Gallery Image 10">
+            <img src="G11.jpg" alt="Gallery Image 11">
+            <img src="G12.jpg" alt="Gallery Image 12">
+        </div>
+
+        <div class="clients-container">
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-5-hover.png" alt="Client 1">
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-6-hover.png" alt="Client 2">
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-1.png" alt="Client 3">
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-2-hover.png" alt="Client 4">
+            <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/clients-img-4-hover.png" alt="Client 5">
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="section" id="resume-section">
+        <div class="resume-container">
+            <a href="Rafik_Resume.pdf" download>
+                <button class="btn">Download My Resume</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <div>
-            <p style="color: white;">Built with ❤ By Rafik Pathan</p>
+        
+        <div class="footer-content copyright">
+            &copy; All Rights Reserved By Rafik Pathan
         </div>
-        <div style="color: white;">&copy;All Rights Reserved By Rafik Pathan</div>
-        <div>
-            <a href="https://www.instagram.com/md_rafik_0322?igsh=YndxdDl1bDFnNGc=" target="_blank"><img src="instalogo.png" width="60px"></a>
-            <a href="https://github.com/mdrafik0322" target="_blank"><img src="githublogo.png" width="40px"></a>
-            <a href="https://www.linkedin.com/in/rafik-pathan-ab7063290/" target="_blank"><img src="linkedlogo.png" width="40px"></a>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/md_rafik_0322?igsh=YndxdDl1bDFnNGc=" target="_blank">
+                    <img src="instalogo.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/mdrafik0322" target="_blank">
+                    <img src="githublogo.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/rafik-pathan-ab7063290/" target="_blank">
+                    <img src="linkedlogo.png" alt="LinkedIn">
+                </a>
+            </div>
         </div>
     </footer>
+<script>
+        // Mobile menu toggle functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const overlay = document.querySelector('.overlay');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+        
+        overlay.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

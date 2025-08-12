@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop MH24 - Premium Coffee & Merchandise</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* Hero Section */
+        #hero {
+            width: 100%;
+            height: 500px;
+            background-image: url('coffee.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 60px;
+            color: white;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Products Section */
+        #products {
+            padding: 80px 5%;
+            background-color: #f9f9f9;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h1 {
+            font-size: 40px;
+            color: #3f0750;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .section-title p {
+            font-size: 20px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            max-height: 180px;
+            border-radius: 10px;
+        }
+
+        .product-info h3 {
+            color: #3f0750;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 15px;
+            min-height: 60px;
+        }
+
+        .product-price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #3f0750;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #3f0750;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #1a0325;
+            transform: scale(1.05);
+        }
+
+        /* Categories Section */
+        #categories {
+            padding: 80px 5%;
+        }
+
+        .categories-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .category-icon {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .category-icon img {
+            max-width: 100%;
+            max-height: 80px;
+        }
+
+        .category-card h3 {
+            color: #3f0750;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .category-card p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Special Offers Section */
+        #offers {
+            padding: 80px 5%;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .offers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .offer-card {
+            background: linear-gradient(135deg, #3f0750, #6a1b9a);
+            border-radius: 10px;
+            padding: 40px;
+            color: white;
+            width: 300px;
+            text-align: center;
+        }
+
+        .offer-card h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .offer-card p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .offer-card .discount {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #hero {
+                height: 300px;
+            }
+            
+            .hero-content h1 {
+                font-size: 40px;
+            }
+            
+            .product-card, .category-card, .offer-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+        
+        /* Tablet Responsive Design */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            #hero {
+                height: 400px;
+            }
+            
+            .hero-content h1 {
+                font-size: 50px;
+            }
+            
+            .section-title h1 {
+                font-size: 36px;
+            }
+            
+            .product-card, .category-card, .offer-card {
+                width: 48%;
+            }
+            
+            .product-info h3 {
+                font-size: 22px;
+            }
+            
+            .category-card h3 {
+                font-size: 20px;
+            }
+            
+            .offer-card h3 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <img src="MH24.png" alt="MH24 Logo">
+    </div>
+    <div class="menu-toggle">☰</div>
+    <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="shop.html">SHOP</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="overlay"></div>
+</header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>OUR SHOP</h1>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="section-title">
+            <h1>Featured Products</h1>
+            <p>Premium coffee and merchandise</p>
+        </div>
+
+        <div class="products-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-single-img-1-250x226.png" alt="Premium Coffee Beans">
+                </div>
+                <div class="product-info">
+                    <h3>Premium Coffee Beans</h3>
+                    <p>Single-origin beans roasted to perfection for an exceptional flavor profile.</p>
+                    <div class="product-price">$15.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="cup3.png" alt="Ceramic Coffee Mug">
+                </div>
+                <div class="product-info">
+                    <h3>Ceramic Coffee Mug</h3>
+                    <p>Handcrafted ceramic mug that keeps your coffee hot for longer.</p>
+                    <div class="product-price">$12.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="pestu.png" alt="Coffee & Pastry Set">
+                </div>
+                <div class="product-info">
+                    <h3>Coffee & Pastry Set</h3>
+                    <p>Perfect combination of our signature blend coffee and freshly baked pastry.</p>
+                    <div class="product-price">$8.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="papercup.png" alt="Coffee To Go">
+                </div>
+                <div class="product-info">
+                    <h3>Coffee To Go</h3>
+                    <p>Our signature blend in a convenient take-away cup.</p>
+                    <div class="product-price">$4.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <div class="section-title">
+            <h1>Shop By Category</h1>
+            <p>Browse our different product categories</p>
+        </div>
+
+        <div class="categories-container">
+            <div class="category-card">
+                <div class="category-icon">
+                    <img src="cup3.png" alt="Coffee Beans">
+                </div>
+                <h3>Coffee Beans</h3>
+                <p>Whole bean and ground coffee options</p>
+                <button class="add-to-cart">View Products</button>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <img src="VR.png" alt="Brewing Equipment">
+                </div>
+                <h3>Brewing Equipment</h3>
+                <p>Everything you need to brew perfect coffee at home</p>
+                <button class="add-to-cart">View Products</button>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <img src="pestu.png" alt="Pastries">
+                </div>
+                <h3>Pastries</h3>
+                <p>Freshly baked goods to pair with your coffee</p>
+                <button class="add-to-cart">View Products</button>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <img src="papercup.png" alt="Merchandise">
+                </div>
+                <h3>Merchandise</h3>
+                <p>MH24 branded items and accessories</p>
+                <button class="add-to-cart">View Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers">
+        <div class="section-title">
+            <h1>Special Offers</h1>
+            <p>Limited time deals and promotions</p>
+        </div>
+
+        <div class="offers-container">
+            <div class="offer-card">
+                <h3>Buy 2 Get 1 Free</h3>
+                <p>On all coffee bean purchases</p>
+                <div class="discount">SAVE 33%</div>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+
+            <div class="offer-card">
+                <h3>Free Pastry</h3>
+                <p>With any coffee purchase over $10</p>
+                <div class="discount">FREE</div>
+                <button class="add-to-cart">Shop Now</button>
+            </div>
+
+            <div class="offer-card">
+                <h3>Subscription Discount</h3>
+                <p>15% off monthly coffee deliveries</p>
+                <div class="discount">SAVE 15%</div>
+                <button class="add-to-cart">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        
+        <div class="footer-content copyright">
+            &copy; All Rights Reserved By Rafik Pathan
+        </div>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/md_rafik_0322?igsh=YndxdDl1bDFnNGc=" target="_blank">
+                    <img src="instalogo.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/mdrafik0322" target="_blank">
+                    <img src="githublogo.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/rafik-pathan-ab7063290/" target="_blank">
+                    <img src="linkedlogo.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const overlay = document.querySelector('.overlay');
+            
+            if (menuToggle && navLinks && overlay) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+                
+                overlay.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+                
+                // Close menu when clicking on a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        overlay.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

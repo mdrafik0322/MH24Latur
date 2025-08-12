@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About MH24 - Premium Coffee Experience</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* Hero Section */
+        #hero {
+            width: 100%;
+            height: 500px;
+            background-image: url('coffee.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 60px;
+            color: white;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 5%;
+            background-color: #f9f9f9;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h2 {
+            font-size: 36px;
+            color: #3f0750;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mission Section */
+        #mission {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .mission-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .mission-content h2 {
+            font-size: 36px;
+            color: #3f0750;
+            margin-bottom: 30px;
+        }
+
+        .mission-content p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Team Section */
+        #team {
+            padding: 80px 5%;
+            background-color: #f9f9f9;
+        }
+
+        .team-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #3f0750;
+        }
+
+        .team-member h3 {
+            color: #3f0750;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #hero {
+                height: 300px;
+            }
+            
+            .hero-content h1 {
+                font-size: 40px;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .team-container {
+                flex-direction: column;
+            }
+        }
+        
+        /* Tablet Responsive Design */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            #hero {
+                height: 400px;
+            }
+            
+            .hero-content h1 {
+                font-size: 50px;
+            }
+            
+            .about-text h2 {
+                font-size: 32px;
+            }
+            
+            .mission-content h2 {
+                font-size: 32px;
+            }
+            
+            .team-member {
+                width: 45%;
+            }
+            
+            .team-member h3 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <img src="MH24.png" alt="MH24 Logo">
+    </div>
+    <div class="menu-toggle">☰</div>
+    <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="shop.html">SHOP</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="overlay"></div>
+</header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>ABOUT US</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2024, MH24 began with a simple passion for exceptional coffee. What started as a small café in the heart of the city has now grown into a beloved community hub where people gather to enjoy premium coffee and meaningful connections.</p>
+                <p>Our journey began when our founder, Rafik Pathan, discovered his love for coffee during his travels across coffee-growing regions of the world. Inspired by the craftsmanship and dedication of coffee farmers, he envisioned a place where this artistry could be celebrated and shared.</p>
+                <p>Today, MH24 is more than just a coffee shop – it's a destination for coffee enthusiasts, remote workers, and anyone seeking a warm, welcoming environment to enjoy life's simple pleasures.</p>
+            </div>
+            <div class="about-image">
+                <img src="cafe1.jpg" alt="MH24 Cafe">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission">
+        <div class="mission-content">
+            <h2>Our Mission</h2>
+            <p>At MH24, our mission is to create extraordinary coffee experiences that bring people together. We are committed to sourcing the finest beans from sustainable farms, crafting each cup with precision and care, and fostering a community where every visitor feels at home.</p>
+            <p>We believe that great coffee has the power to transform ordinary moments into extraordinary memories. Through our dedication to quality, sustainability, and community, we strive to make MH24 a place where people can connect, create, and celebrate life's beautiful moments.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="section-title">
+            <h1>Meet Our Team</h1>
+            <p>The passionate people behind MH24</p>
+        </div>
+
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Team Member">
+                <h3>Rafik Pathan</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Team Member">
+                <h3>Sarah Johnson</h3>
+                <p>Head Barista</p>
+            </div>
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Team Member">
+                <h3>Michael Chen</h3>
+                <p>Roastery Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content copyright">
+            &copy; All Rights Reserved By Rafik Pathan
+        </div>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/md_rafik_0322?igsh=YndxdDl1bDFnNGc=" target="_blank">
+                    <img src="instalogo.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/mdrafik0322" target="_blank">
+                    <img src="githublogo.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/rafik-pathan-ab7063290/" target="_blank">
+                    <img src="linkedlogo.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const overlay = document.querySelector('.overlay');
+            
+            if (menuToggle && navLinks && overlay) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+                
+                overlay.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+                
+                // Close menu when clicking on a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        overlay.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

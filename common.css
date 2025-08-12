@@ -1,0 +1,283 @@
+/* Common Styles for MH24 Website */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(102, 199, 199, 1);
+    padding: 5px 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 40%;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3f0750;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #3f0750;
+    color: white;
+}
+
+.nav-links img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #3f0750;
+    cursor: pointer;
+    z-index: 300;
+}
+
+/* Footer Styles */
+footer {
+    height: 200px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 5%;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #3f0750;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1a0325;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 5%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h1 {
+    font-size: 40px;
+    color: #3f0750;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    font-size: 20px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3px 5%;
+    }
+    
+    .logo {
+        width: auto;
+    }
+    
+    .logo img {
+        width: 60px;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(102, 199, 199, 0.95);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 40px;
+        transition: right 0.3s ease;
+        z-index: 200;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links a {
+        font-size: 18px;
+        padding: 15px 20px;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links img {
+        display: none;
+    }
+    
+    
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 150;
+        display: none;
+    }
+    
+    .overlay.active {
+        display: block;
+    }
+    
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 5%;
+        text-align: center;
+    }
+    
+    .section {
+        padding: 50px 5%;
+    }
+    
+    .section-title h1 {
+        font-size: 30px;
+    }
+    
+    .section-title p {
+        font-size: 16px;
+    }
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 1024px) and (min-width: 769px) {
+    header {
+        padding: 12px 3%;
+    }
+    
+    .logo img {
+        width: 120px;
+    }
+    
+    .nav-links a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    .nav-links img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    footer {
+        padding: 25px 3%;
+    }
+    
+    .section {
+        padding: 60px 3%;
+    }
+    
+    .section-title h1 {
+        font-size: 36px;
+    }
+    
+    .section-title p {
+        font-size: 18px;
+    }
+}
